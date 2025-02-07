@@ -1,0 +1,5 @@
+venv/
+tests/
+vnv/
+__pycache__/
+config.py/
