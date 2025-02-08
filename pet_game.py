@@ -90,7 +90,7 @@ class Pet:
             # Удерживаем питомца в нижней части экрана
             self.y = screen_height - 128
         else:
-            # Обычное поведение для других питомцев
+            # Полет по экрану для летающих петов
             if self.x <= 0 or self.x >= screen_width - 128:
                 self.dir_x = -(self.dir_x)
             if self.y <= 0 or self.y >= screen_height - 128:
