@@ -10,6 +10,5 @@ pets = [
     ("НЛО", os.path.join('gifs', 'Vp3M.gif')),
     ("Бабочка", os.path.join('gifs', '2N06.gif')),
     ("Феникс", os.path.join('gifs', 'ARm.gif')),
-    
     ("Приобрести", os.path.join('gifs', 'buy.gif'))
 ]

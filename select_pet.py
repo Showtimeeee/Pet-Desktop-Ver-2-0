@@ -121,7 +121,7 @@ def select_pet():
 
     # Текст в нижнем углу слева
     footer_label_left = tk.Label(root,
-                                  text="v.siv",
+                                  text="v.s",
                                   font=('Helvetica', 10),
                                   bg='#1e1e2f',
                                   fg='#ffffff',
@@ -131,7 +131,7 @@ def select_pet():
 
     # в нижнем углу справа
     footer_label_right = tk.Label(root,
-                                   text="v1.9",
+                                   text="v2.0",
                                    font=('Helvetica', 10),
                                    bg='#1e1e2f',
                                    fg='#ffffff',
