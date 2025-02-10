@@ -18,9 +18,9 @@
 - Поведение питомцев: Некоторые питомцы имеют уникальное поведение
 ---
 pip install -r requirements.txt
----
+
 run select_pet.py
----
+
 press 'q' to exit
 
 
