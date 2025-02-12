@@ -13,4 +13,4 @@ def test_pets_data():
         ("Бабочка", os.path.join('gifs', '2N06.gif')),
         ("Приобрести", os.path.join('gifs', 'buy.gif'))
     ]
-    assert pets_data.pets == expected_pets, "The pets data does not match the expected values"
+    assert pets_data.pets == expected_pets
