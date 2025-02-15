@@ -5,17 +5,18 @@ import keyboard
 import random
 import os
 
+
 class Pet:
     def __init__(self, gif_path, speed):
         self.window = tk.Tk()
         self.gif_path = gif_path
-        self.speed = speed  # Начальная скорость обновления
-
-        # Открываем GIF с помощью PIL, чтобы получить количество кадров
+        self.speed = speed
+        
+        # откр GIF с помощью PIL, чтобы получить количество кадров
         with Image.open(self.gif_path) as img:
             self.num_frames = img.n_frames
 
-        # Код ниже генерирует строку для каждого кадра в GIF
+        # генерирует строку для каждого кадра в GIF
         self.moveleft = []
         self.moveright = []
 
@@ -52,7 +53,6 @@ class Pet:
         # Привязываем события мыши для изменения скорости
         self.window.bind('<Enter>', self.speed_up)
         self.window.bind('<Leave>', self.slow_down)
-
         self.window.mainloop()
 
     def changetime(self, direction):
@@ -79,7 +79,7 @@ class Pet:
         screen_width = self.window.winfo_screenwidth()
         screen_height = self.window.winfo_screenheight()
 
-        # Проверяем, является ли питомец "Мопс", "Пикачу", "Пингвин" или "Котик"
+        # Проверяем, является ли питомец ходячим, выбираем кто будет ходить
         pet_name = os.path.basename(self.gif_path)
         if pet_name in ['dasad.gif', '6vw5.gif', '6no.gif']:
             # Ограничиваем движение по нижней части экрана
